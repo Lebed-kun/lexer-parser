@@ -13,7 +13,7 @@ var operators = require('./parse_rules').operators;
 // Parsing rules
 var parseRules = require('./parse_rules').rules;
 
-// Custom lexer-parser
+// Custom lexer
 var mathLexer = lexer(lexemes, lexRules);
 // Custom math parser
 var mathParser = parser(parseRules, operators);
