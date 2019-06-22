@@ -21,7 +21,7 @@ var wildcards = {
 }
 
 var parseRules = {
-    PHONEME : function(operators, opStack, resStack) {
+    PHONEME : function(wildcards, opStack, resStack) {
         return function(token) {
             let cond = opStack.length === 0 || 
             opStack[opStack.length - 1].type === LEFT_BRACE &&
